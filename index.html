@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8"/> <!--Permite la utilización de caracteres extraños (ñ, tildes, etc.) sin que hayan problemas inesperados-->
+      <title>Navidad a la Andaluza</title>
+      <link href="style.css" rel="stylesheet" type="text/css"> <!--Relacionamos este documento html con una hoja de estilos css--> 
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!--Esto referencia al tipo de fuente del texto-->
+    </head>
+  <body>
+    <h1 id="inicio">Navidad a la Andaluza</h1>
+      <!--Vamos a introducir un menú en la página para que nos lleve a la parte que nos interese, dando una id a cada elemento-->
+    
+    <div class="menuOpciones">  <!--Vamos a incluir el menú de las opciones en un contenedor (div) porque quiero que quede todo este bloque ajustado a la derecha (este cambio lo haré en la hoja de estilos css)-->
+      <a href="#entrantes">Entrantes</a>
+      <a href="#primerPlato">Primer plato</a>
+      <a href="#segundoPlato">Segundo plato</a>
+      <a href="#postres">Postres</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#tablaAlergenos">Tabla de Alérgenos</a>
+    </div>
+
+      <hr> <!--Este elemento es una línea horizontal para separar visualmente el menú anterior del contenido de la página-->
+
+      <!--Creamos una lista ordenada que incluye cada parte del menú, desde los entrantes a la tabla de alérgenos-->
+      <ol><li><h2 id="entrantes">Entrantes</h2></li> <!--Le hemos dado un id a cada elemento de la lista ordenada para ligarlo al menú de arriba-->
+        <!--Dentro de cada elemento de la lista ordenada, introducimos una lista desordenada con las tres opciones de platos-->
+        <ul>
+          <li><h3>Surtido ibérico del Valle de los Pedroches y jamón ibérico de Jabugo</h3></li>
+            <!--Introducimos un párrafo con una breve explicación del plato-->
+            <p>Productos ibéricos elaborados de manera artesana para gusto y disfrute de los paladares más exigentes.</p>
+              <!--Incluimos una imagen del plato y un texto alternativo que explica el contenido de la imagen en caso de que esta no cargue correctamente-->
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/surtido.jpg" alt="Surtido ibérico que incluye Jamón ibérico de Jabugo, chorizo, salchichón y lomo del Valle de los Pedroches."/>
+            </figure>
+          <li><h3>Queso de cabra payoya</h3></li>
+            <p>Este queso proviene de las cabras payoyas, propias de la Sierra de Grazalema y la Serranía de Ronda. Quesos curados envueltos en manteca, pimentón o romero. No podrás quedarte con uno solo.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/quesopayoyo.jpg" alt="Tabla de quesos payoyos variados."/>
+            </figure>
+          <li><h3>Ajoatao</h3></li>
+            <p>Crema de ajo emulsionada, muy típica de Jaén, perfecta para untar tostas de pan fritas con aceite de oliva Virgen Extra.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/ajoatao.jpg" alt="Presentación de ajoatao acompañado de tostas fritas."/>
+            </figure>
+            <!--En el caso de platos que tengan una receta, añadimos un enlace a un sitio web en el que se puede consultar la misma-->
+            <p>Consulta la receta en <a href="https://www.directoalpaladar.com/videos-recetas/ajoatao-jaen-receta-tradicional-espanola-facil-sorprendente-video-incluido" target="_blank">este enlace</a>.</p>
+        </ul>
+        <br>
+        <!--Vamos a añadir un enlace interno para volver arriba tras cada tipo de plato, así el usuario podrá moverse con mayor facilidad por la página-->
+        <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+
+          <li><h2 id="primerPlato">Primer plato</h2></li>
+        <ul>
+          <li><h3>Sopa de picadillo</h3></li>
+            <p>Sopa preparada a partir de caldo de puchero, con taquitos de jamón ibérico y huevo cocido. Un plato reconfortante muy popular en Sevilla.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/sopaDePicadillo.jpg" alt="Plato de sopa de picadillo con huevo cocido troceado, taquitos de jamón y fideos."/>
+            </figure>
+            <p>Puedes conocer cómo se elabora este plato en <a href="https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/sopa-picadillo-tradicional-andaluza-plato-cuchara-para-iniciar-cenas-navidenas" target="_blank">este enlace</a>.</p>
+          <li><h3>Gazpachuelo</h3></li>
+            <p>Sopa blanca con pescado, patata y mayonesa como base principal. Una tradición de pescadores malagueños que te atrapará.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/gazpachuelo.jpg" alt="Presentación del gazpachuelo con patatas, pescado blanco y gambas en el centro del plato."/>
+            </figure>
+            <p><a href="https://www.directoalpaladar.com/recetas-de-sopas-y-cremas/gazpachuelo-malagueno-receta-tradicional" target="_blank">Aquí</a> puedes ver la receta de este delicioso plato.</p>
+          <li><h3>Consomé de verduras</h3></li>
+            <p>Esta alternativa a la sopa a base de carnes es exquisita y nutritiva, elaborada una gran variedad de vegetales.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/consomeVerduras.jpg" alt="Cuenco de sopa de verduras."/>
+            </figure>
+            <p>Consulta los pasos para realizar la receta de este plato en <a href="https://unareceta.com/consome-de-verduras/" target="_blank">este enlace</a>.</p>
+        </ul>
+        <br>
+        <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+
+          <li><h2 id="segundoPlato">Segundo plato</h2></li>
+        <ul>
+          <li><h3>Habas con jamón</h3></li>
+            <p>Plato típico de la provincia de Granada, una sencilla receta que te dejará más que satisfecho.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/habasConJamon.jpg" alt="Presentación en sartén de las habas con taquitos de jamón junto a un pequeño cuenco con más tacos de jamón."/>
+            </figure>
+            <p>Esta receta granadina la puedes consultar <a href="https://www.recetassinlactosa.com/habas-con-jamon/" target="_blank">aquí</a>.</p>
+          <li><h3>Carrillera al Pedro Ximénez</h3></li>
+            <p>Tiernas carrilleras de cerdo elaboradas con Pedro Ximénez, de la región vinícola de Montilla-Moriles (Córdoba). Se deshacen en la boca.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/carrillera.jpg" alt="Cazuela con las carrilleras en abundante salsa de Pedro Ximénez con patatas fritas."/>
+            </figure>
+            <p>En <a href="https://andaluciasabe.es/3-recetas-navidenas-con-sabor-andaluz/" target="_blank">este enlace</a> tienes la receta de este exquisito plato.</p>
+          <li><h3>Rabo de toro</h3></li>
+            <p>Exquisito rabo de toro preparado al estilo cordobés, con guarnición de patatas fritas o en puré.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/raboToro.jpg" alt="Rabo de toro presentado con salsa y patatas fritas."/>
+            </figure>
+            <p>En <a href="https://www.directoalpaladar.com/recetas-de-carnes-y-aves/receta-de-rabo-de-toro-a-la-cordobesa-en-olla-expres" target="_blank">esta página</a> encontrarás la forma de cocinar este plato.</p>
+        </ul>
+        <br>
+        <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+
+          <li><h2 id="postres">Postres</h2></li>
+        <ul>
+          <li><h3>Borrachuelos</h3></li>
+            <p>Dulces típicos malagueños, "emborrachados" con vino blanco, anís y vino dulce de Málaga.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/borrachuelos.jpg" alt="Presentación de los borrachuelos con azúcar por encima, en tres platos diferentes."/>
+            </figure>
+            <p>Para preparar estos dulces consulta <a href="https://www.loleta.es/receta-facil-borrachuelos-malaguenos-pestinos-dulces-caseros/" target="_blank">este enlace</a>.</p>
+          <li><h3>Alfajores</h3></li>
+            <p>Dulce almeriense a base de almendra, originario de la gastronomía andalusí.</p>
+             <figure>
+              <img class="imgMenu" src="ImagenesMenu/alfajores.jpg" alt="Cuatro alfajores con sus obleas."/>
+            </figure>
+            <p>Consulta la receta <a href="https://www.obleaspastor.com/receta-tradicional-de-alfajores-de-almeria-dulce-tipico-de-navidad/" target="_blank">aquí</a>.</p>
+          <li><h3>Pan de Cádiz</h3></li>
+            <p>También conocido como turrón de Cádiz, es un mazapán típico gaditano relleno de dulce de batata y crema de yema.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/panDeCadiz.jpg" alt="Turrón de Cádiz presentado con un corte, en el que se observa el relleno."/>              </figure>
+            <p>Conoce más sobre este dulce gaditano en <a href="https://www.pequerecetas.com/receta/como-hacer-pan-de-cadiz/" target="_blank">esta página</a>.</p>
+        </ul>
+        <br>
+        <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+
+          <li><h2 id="bebidas">Bebidas</h2></li>
+        <ul>
+          <li><h3>Vinos</h3></li>
+            <p>Vinos andaluces con Denominación de origen: Condado de Huelva, Jerez-Xérès-Sherry, Manzanilla de Sanlúcar, Málaga, Sierras de Málaga,  Montilla-Moriles y Granada.</p>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/vino.jpg" alt="Copa siendo rellenada de vino tinto."/>
+            </figure>
+          <li><h3>Agua</h3></li>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/agua.jpg" alt="Tres copas de agua siendo alzadas por tres manos en gesto de brindis."/>
+            </figure>
+          <li><h3>Refrescos</h3></li>
+            <figure>
+              <img class="imgMenu" src="ImagenesMenu/refrescos.jpg" alt="Cuatro vasos de tubo con refresco de naranka, lima, cola y sandía."/>
+            </figure>
+        </ul>
+      </ol>
+      <br>       
+      <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+      <br>
+      
+    <!--Ahora vamos a crear la tabla de alérgenos-->
+    <h2 id="tablaAlergenos">Tabla de alérgenos</h2>
+      <table class="tabla">
+        <caption ALIGN=bottom>Alérgenos que contiene cada plato.</caption>  <!--Incluimos un pie de tabla-->
+        <!--Empezamos creando la cabecera de la tabla con el icono de cada alérgeno, con su texto alternativo correspondiente-->
+        <thead>
+          <tr>
+            <th>Alérgenos</th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/altramuces.png" width="30px" alt="Altramuces"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/apio.png" width="30px" alt="Apio"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/cacahuetes.png" width="30px" alt="Cacahuetes"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/crustaceos.png" width="30px" alt="Crustáceos"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/dioxidoAzufreSulfitos.png" width="30px" alt="Sulfitos"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/frutosDeCascara.png" width="30px" alt="Frutos Cáscara"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/gluten.png" width="30px" alt="Gluten"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/granosDeSesamo.png" width="30px" alt="Sésamo"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/huevos.png" width="30px" alt="Huevos"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/lacteos.png" width="30px" alt="Lácteos"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/moluscos.png" width="30px" alt="Moluscos"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/mostaza.png" width="30px" alt="Mostaza"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/pescado.png" width="30px" alt="Pescado"></th>
+            <th><img src="ImagenesMenu/ImagenesAlergenos/soja.png" width="30px" alt="Soja"></th>
+          </tr>
+        </thead>
+        <!--Vamos a crear un cuerpo para cada tipo de plato, en este caso, los entrantes-->
+        <tbody class="entrantesTabla"> <!--Le damos una clase propia a cada tipo de plato para poder estilizarla independientemente al resto-->
+          <tr><th colspan="15">Entrantes</th></tr>
+          <tr>
+            <th>Surtido Ibéricos</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+          </tr>
+          <tr>
+            <th>Quesos Cabra</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Ajoatao</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <!--Creamos el cuerpo para los primeros platos y le damos su propia clase-->
+        <tbody  class="primerosTabla">
+          <tr><th colspan="15">Primeros platos</th></tr>
+          <tr>
+            <th>Sopa Picadillo</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Gazpachuelo</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Consomé Verduras</th>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <!--Ahora añadimos otro cuerpo para los segundos platos y su clase para estilizarla en el archivo css-->
+        <tbody class="segundosTabla">
+          <tr><th colspan="15">Segundos platos</th></tr>
+          <tr>
+            <th>Habas Jamón</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr> <tr>
+            <th>Carrillera</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr> <tr>
+            <th>Rabo Toro</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        <!--Y terminamos con otro cuerpo diferente para los postres y también le damos su propia clase-->
+        <tbody class="postresTabla">
+          <tr><th colspan="15">Postres</th></tr>
+          <tr>
+            <th>Borrachuelos</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr> <tr>
+            <th>Alfajores</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr> <tr>
+            <th>Pan Cádiz</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td><img src="ImagenesMenu/ImagenesAlergenos/tick.png" width="14px" alt="X"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <br><br>  <!--Espaciamos el contenido-->
+      <!--Ahora vamos a crear otra pequeña tabla que contenga la leyenda para que el usuario sepa reconocer los iconos de los alérgenos-->
+      <table class="tabla">
+        <tr>
+          <th colspan="2">Leyenda</th>
+        </tr>
+        <tr>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/altramuces.png" width="20px" alt="Altramuces"></td>
+          <td>Altramuces</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/apio.png" width="20px" alt="Apio"></td> 
+          <td>Apio</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/cacahuetes.png" width="20px" alt="Cacahuetes"></td> 
+          <td>Cacahuetes</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/crustaceos.png" width="20px" alt="Crustáceos"></td> 
+          <td>Crustáceos</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/dioxidoAzufreSulfitos.png" width="20px" alt="Sulfitos"></td> 
+          <td>Dióxido de Azufre y Sulfitos</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/frutosDeCascara.png" width="20px" alt="Frutos Cáscara"></td> 
+          <td>Frutos de Cáscara</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/gluten.png" width="20px" alt="Gluten"></td> 
+          <td>Gluten</td>
+        </tr>
+        <tr>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/granosDeSesamo.png" width="20px" alt="Sésamo"></td>
+          <td>Granos de Sésamo</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/huevos.png" width="20px" alt="Huevos"></td> 
+          <td>Huevos</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/lacteos.png" width="20px" alt="Lácteos"></td> 
+          <td>Lácteos</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/moluscos.png" width="20px" alt="Moluscos"></td> 
+          <td>Moluscos</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/mostaza.png" width="20px" alt="Mostaza"></td> 
+          <td>Mostaza</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/pescado.png" width="20px" alt="Pescado"></td> 
+          <td>Pescado</td>
+          <td><img src="ImagenesMenu/ImagenesAlergenos/soja.png" width="20px" alt="Soja"></td> 
+          <td>Soja</td>
+        </tr>
+      </table>
+  </body>
+  <br>
+  <p class="volverArriba">Vuelve <a href="#inicio">arriba</a>.</p>
+  <br>  <!--Espaciamos el contenido-->
+  <!--Finalmente, añadimos un pie de página que contenga los datos de la autora y un enlace a otra página para poder consultar las fuentes de las que se han obtenido las imágenes de este proyecto-->
+  <footer>
+    <p><a href="bibliografia.html" target="_blank">Aquí</a> puedes consultar las fuentes utilizadas para este proyecto.</p>
+    <p>Autora: Patricia Lima Bolumar <br>DAW1<br>Diciembre 2022</p>
+  </footer>
+</html>
