@@ -1,0 +1,63 @@
+html{
+    background-image: url("ImagenesMenu/fondoEdit3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color:rgb(87, 53, 21);
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+a{
+    color: rgb(87, 53, 21);
+}
+
+ul{
+    list-style-type: square;
+}
+
+.listaBibliografia{
+    list-style-type: circle;
+}
+
+.menuOpciones{
+    text-align: right;
+}
+
+.volverArriba, caption{
+    text-align: right;
+    font-size: 22px;
+}
+
+hr{
+    border-color: rgb(87, 53, 21);
+}
+
+th,td{
+    width: auto;
+    padding: 5px;
+    text-align: center; 
+}
+
+thead{
+    background-color: rgb(205, 153, 104);
+}
+
+.entrantesTabla, .primerosTabla, .segundosTabla, .postresTabla{
+    background: linear-gradient(rgb(250, 218, 178), rgb(205, 153, 104));
+}
+
+.imgMenu{
+    width: 500px;
+    border-radius: 20px;
+}
+
+footer{
+    font-size: 21px;
+    text-align: right;
+}
